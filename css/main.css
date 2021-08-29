@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark: #19345e;
+  --clr-primary: #f47522;
+  --clr-light: #fff;
+}
+
+body {
+  font-family: roboto, sans-serif;
+  color: var(--clr-dark) !important;
+}
+
+.nav .nav-link {
+  color: var(--clr-dark) !important;
+}
+
+.nav .nav-link.active {
+  color: var(--clr-primary) !important;
+}
+
+.main {
+  height: 100vh;
+}
+
+.main--hero {
+  background-image: url("./../img/bg-img.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.img--profile {
+  border-radius: 50%;
+}
+
+.btn {
+  border-radius: 20px !important;
+  background-color: var(--clr-primary) !important;
+  color: var(--clr-light);
+  font-size: 16px;
+  border: none;
+}
+
+.btn:hover {
+  color: var(--clr-light) !important;
+  background-color: var(--clr-dark) !important;
+}
+
+.img--logo {
+  width: 275px;
+}
+
+.left {
+  background-image: url("./../img/charles-rRWiVQzLm7k-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.left::before {
+  background-color: rgba(25, 52, 94, 0.65);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.message {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
